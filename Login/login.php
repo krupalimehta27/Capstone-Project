@@ -28,7 +28,7 @@
   if($_SERVER['REQUEST_METHOD']=='POST')
   {
       if(empty($_POST['username']) || empty($_POST['pswd'])){
-      echo "<p>Please fill all the fields. </p>";
+      echo "<script language='javascript'>alert('Please fill all the fields.')</script>";
       } 
       else
       {

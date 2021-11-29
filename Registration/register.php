@@ -91,35 +91,34 @@
 									<div class="col-md-12">
 										<div class="form-group d-flex align-items-center">
 										<label class="label" for="name">UserName</label>
-										<input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+										<input type="text" class="form-control" id="username" name="username" placeholder="Username" pattern="^[A-Za-z]*$" title="Username should have characters only no digits or special characters are allowed" required>
 									</div>
 									</div>
 								  	<div class="col-md-12">
 										<div class="form-group d-flex align-items-center">
 				            			<label class="label" for="password">Password</label>
-				              			<input type="password" class="form-control" id="pswd"  name="pswd" placeholder="Password" required>
+				              			<input type="password" class="form-control" id="pswd"  name="pswd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 				           			</div></div>
 									<div class="col-md-12">
 										<div class="form-group d-flex align-items-center">
 					      				<label class="label" for="email">Email Address</label>
-					      				<input type="email" class="form-control" id="email" name="email" placeholder="johndoe@email.com" required>
+					      				<input type="email" class="form-control" id="email" name="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email Address should be in the following order: characters@characters.domain (characters followed by @ sign, followed by more characters and then a period '.' sign. After the period sign, add atleast 2 letters between a-z. )" required>
 					      			</div></div>
 									<div class="col-md-12">
 										<div class="form-group d-flex align-items-center">
 					      				<label class="label" for="phone">Phone no.</label>
-					      				<input type="tel" class="form-control" id="phone" name="phone" placeholder="123-455-6758" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+					      				<input type="tel" class="form-control" id="phone" name="phone" placeholder="123-455-6758" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" title="The phone numbers should be in one of the formats listed: (123) 345-6789, (123)345-6789, 123-345-6789, 1233456789" required>
 					      			</div></div>
 									<div class="col-md-12">
 										<div class="form-group d-flex align-items-center">
 				            			<label class="label" for="gender">Gender</label>
-				              			<input type="text" id="gender" name="gender" class="form-control" placeholder="Gender" required>
+				              			<input type="text" id="gender" name="gender" class="form-control" placeholder="Gender" pattern="^(?:male|female|intersex|transgender|non-conforming|gender-variant|personal|eunuch|prefer-not-to-say|other)$" title="Please enter one of the following: male, female, intersex, transgender, non-conforming, gender-variant, personal, eunuch, prefer-not-to-say, other. ALL IN LOWERCASE." required>
 				            		</div></div>
 									<div class="col-md-12">
 										<div class="form-group d-flex align-items-center">
 				            			<label class="label" for="age">Age</label>
-				              			<input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
+				              			<input type="number" class="form-control" id="age" name="age" placeholder="Age" min=5 max=90 title="The age should be between 5 to 90. Please enter a numeric value only." required>
 				            		</div>
-							
 								</div>
 									<div class="col-md-12 my-4">
 										<div class="form-group">
