@@ -20,10 +20,38 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Login #9</title>
+    <title>Login</title>
   </head>
   <body>
   
+  <?php
+  if($_SERVER['REQUEST_METHOD']=='POST')
+  {
+      if(empty($_POST['username']) || empty($_POST['pswd'])){
+      echo "<p>Please fill all the fields. </p>";
+      } 
+      else
+      {
+      require('db.php');
+      $username= $con -> real_escape_string($_POST['username']);
+			$password = $con -> real_escape_string($_POST['pswd']);
+
+      echo $username;
+      echo $password;
+      $query = "SELECT * FROM user WHERE username = '$username' AND pasword = '$password' LIMIT 1;";
+      $res = mysqli_query($con, $query); 
+      if (mysqli_num_rows($res) == 1){
+          $rs = mysqli_fetch_array($res, MYSQLI_ASSOC);
+          session_start();
+          $_SESSION['login'] = true;
+          header("Location: auth_session.php");
+      }else{
+          echo "<p>Invalid login information</p>";
+          session_unset();
+      }
+    }
+  }
+  ?>
 
   
   <div class="content">
@@ -40,15 +68,13 @@
                   <h3>Sign In to <strong>You Trend</strong></h3>
                   <p class="mb-4">Dance Classes For Everyone.</p>
                 </div>
-                <form action="#" method="post">
+                <form action="login.php" method="post">
                   <div class="form-group first">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
 
                   </div>
                   <div class="form-group last mb-4">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" name="pswd" placeholder="Password">
                     
                   </div>
                   
@@ -57,7 +83,7 @@
                       <input type="checkbox" checked="checked"/>
                       <div class="control__indicator"></div>
                     </label>
-                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                    <span class="ml-auto"><a href="../Registration/register.php" class="already-user">Not a User? Register!</a></span> 
                   </div>
 
                   <input type="submit" value="Log In" class="btn btn-pill text-white btn-block btn-primary">
@@ -72,7 +98,7 @@
                       <span class="icon-twitter mr-3"></span>  -->
                     </a> 
                     <!-- <div class =  "g-signin2 text-center "> -->
-                      <a href="#" class="g-signin2" >
+                      <a href="../index.html" class="g-signin2" style="text-align:center;">
                         <!-- <span class="icon-google mr-3"></span>  -->
                       </a>
                     <!-- <a href="#" class="google">

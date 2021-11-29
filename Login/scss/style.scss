@@ -114,10 +114,10 @@ h2 {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	.forgot-pass {
+	.already-user {
 		position: relative;
 		top: 2px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.btn-pill {
@@ -138,6 +138,7 @@ h2 {
 		height: 50px;
 		border-radius: 50%;
 		display: inline-block;
+	}
 		span {
 			position: absolute;
 			top: 50%;
@@ -159,14 +160,7 @@ h2 {
 				background: darken(#1da1f2, 5%);
 			}
 		}
-		// &.google {
-		// 	background: #ea4335;
-		// 	&:hover {
-		// 		background: darken(#ea4335, 5%);
-			}
-		}
 	}
-}
 
 .control {
   display: block;
