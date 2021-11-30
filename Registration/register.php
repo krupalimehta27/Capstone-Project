@@ -144,7 +144,8 @@
 		          	</p>
 		      			<p class="mb-3 text-center">Signup with this service</p>
 		      			<p class="social-media d-flex justify-content-center">
-<a href="#" class="g-signin2"></a>							</p>
+						<a href="#" class="g-signin2"></a>							
+					</p>
 	          	</div>
 		          <div class="w-100 text-center">
 								<p class="mt-4">I'm already a member! <a href="../Login/login.php">Sign In</a></p>
