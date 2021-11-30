@@ -3,25 +3,43 @@
     <title>Subscription Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel ="stylesheet" href="./pricingstyle.css">
+    <link rel ="stylesheet" href="css/pricingstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="pricing-plan pricing-plan-highlight">
         <div class="pricing-plan-header">
-            <h1 class ="pricing-plan-title">Advance plan</h1>
+            <h1 class ="pricing-plan-title">Subscription Monthly Plan</h1>
             <h2 class ="pricing-plan-summary">For those who want to subscribe</h1>
         </div>
         <div class="pricing-plan-description">
             <ul class="pricing-plan-list">
-                <li class = "pricing-plan-feature">Feature #1</li>
-                <li class = "pricing-plan-feature">Feature #2</li>
-                <li class = "pricing-plan-feature">Feature #3</li>
+                <li class = "pricing-plan-feature">Access Beginner Videos</li>
+                <li class = "pricing-plan-feature">Access Intermediate Videos</li>
+                <li class = "pricing-plan-feature">Access Advanced Videos</li>
             </ul>
         </div>
         <div class="pricing-plan-action">
             <p class="pricing-plan-cost">10$</p>
             <p class="pricing-plan-text">per month</p>
-            <a href ="./" class="pricing-plan-button">Purchase</a>
+
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        
+                <div class="checkout_form">
+                    <center>
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </center>
+                  
+                </div>
+             </form>
+
+
             <p class="pricing-plan-text">Advance Tutorials at $10 for 1 month </p>
         </div>
     </section>
