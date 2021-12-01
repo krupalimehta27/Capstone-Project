@@ -98,7 +98,7 @@
                       <span class="icon-twitter mr-3"></span>  -->
                     </a> 
                     <!-- <div class =  "g-signin2 text-center "> -->
-                      <a href="../index.html" class="g-signin2" style="text-align:center;">
+                      <a href="index.php" class="g-signin2" style="text-align:center;">
                         <!-- <span class="icon-google mr-3"></span>  -->
                       </a>
                     <!-- <a href="#" class="google">

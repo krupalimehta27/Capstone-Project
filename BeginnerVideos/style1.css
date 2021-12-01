@@ -1,0 +1,9 @@
+h1.headt{
+    width: 100%;
+    padding: 2.5vw;
+    border-radius: 8px;
+    background-color: #111;
+    color: white;
+    /* margin-left: 30px; */
+    font-family: Sequel 100 Wide sans-serif;
+}

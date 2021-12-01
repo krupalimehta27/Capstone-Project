@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +12,6 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-
--->
-    <!-- Additional CSS Files -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
-
-    <!-- <link rel="stylesheet" type="text/css" href="css/templatemo-style.css"> -->
 
 
     <link rel="stylesheet" type="text/css" href="Services/assets/css/font-awesome.css">
@@ -31,7 +28,7 @@
     <link href="css/lsb.css" rel="stylesheet" type="text/css">
     <!-- //gallery -->
     <!-- js -->
-    <script type="text/javascript" src="Services/js/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <!-- //js -->
     <!-- font-awesome-icons -->
     <link href="css/font-awesome.css" rel="stylesheet"> 
@@ -43,12 +40,11 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <link rel="stylesheet" href="css/nicepage.css" media="screen">
-    <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
     
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -76,8 +72,8 @@
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <nav class="link-effect-8" id="link-effect-8">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-                      <li><a href="">Services</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="trainers.html">Trainers</a></li>
           <li class="dropdown">
             
@@ -86,6 +82,7 @@
             </ul>
           </li>
           <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="../Capstone-Project/Login/login.php" onclick="alert('Log Out successfully');" class="button">Log Out</a></li>
         </ul>
       </nav>
     </div>
@@ -112,7 +109,6 @@
       </div>
     </header>
     <!--header-->
-    <body>
     
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
@@ -127,8 +123,6 @@
     </div>
     <!-- ***** Preloader End ***** -->
     
-    
-    <!-- ***** Header Area Start ***** -->
     <!-- <header class="header-area header-sticky"> -->
         <div class="container">
             <div class="row">
@@ -158,55 +152,50 @@
 
                  
     
-            <div class="row" id="tabs" style="margin-left:25px;">
+            <div class="row" id="tabs" margin-top:20px;>
               <div class="col-lg-4">
                 <ul>
-                  <li><a href='#tabs-1'><img src="Services/assets/images/dance11.png" alt="">Beginner</a></li>
-                  <li><a href='#tabs-2'><img src="Services/assets/images/dance22.png" alt="">Intermediate</a></a></li>
-                  <li><a href='#tabs-3'><img src="Services/assets/images/dance111.png" alt="">Advanced</a></a></li>
-                  <!-- <li><a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="">Fourth Training Class</a></a></li> -->
+                  <li><a href='#tabs-1'><img src="Services/assets/images/dance11.png" alt="Beginner">Beginner</a></li>
+                  <li><a href='#tabs-2'><img src="Services/assets/images/dance22.png" alt="Intermediate">Intermediate</a></a></li>
+                  <li><a href='#tabs-3'><img src="Services/assets/images/dance111.png" alt="Advanced">Advanced</a></a></li>
+                
                   <div class="main-rounded-button"><a href="subscription.html">Subscribe</a></div>
                 </ul>
               </div>
               <div class="col-lg-8">
                 <section class='tabs-content'>
                   <article id='tabs-1'>
-                    <!-- <img src="assets/images/ballet1.mp4" alt="Ballet Class"> -->
+                    
                     <div id="tm-video-container">
                         <video autoplay muted loop id="tm-video">
-                            <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                           
                                 <source src="Services/assets/images/ballet1_SparkVideo.mp4" type="video/mp4">
                         </video>    
                     </div>
                     
                     <h4>Beginner</h4>
-                    <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+                    <p>Learn to dance at your feet in many different styles like Jazz, Contemporary, Ballet, Hiphop, etc. Subscribe us at $10 monthly to enjoy the unlimited video streaming. Watch intermediate videos and sharpen your skills and create your strong base by watching our tutorials with the best Trainers who are avaliable to help you in shaping your skills.</p>
                     <div class="main-button">
-                        <a href="beginner.html">View Beginner Videos</a>
+                        <a href="video.php">View Beginner Videos</a>
                     </div>
                   </article>
                   <article id='tabs-2'>
-                    <!-- <img src="assets/images/training-image-03.jpg" alt="Third Class"> -->
+                   
                     <h4>Intermedite</h4>
-                    <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <p>Learn to dance at your feet in many different styles like Jazz, Contemporary, Ballet, Hiphop, etc. Subscribe us at $10 monthly to enjoy the unlimited video streaming. Watch Beginner videos and sharpen your skills and create your strong base by watching our tutorials with the best Trainers who are avaliable to help you in shaping your skills.</p>
                     <div class="main-button">
                       <a href="subscription.html">View Intermediate Videos</a>
                     </div>
                   </article>
                   <article id='tabs-3'>
-                    <!-- <img src="assets/images/training-image-03.jpg" alt="Third Class"> -->
+                   
                     <h4>Advanced</h4>
-                    <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
+                    <p>Learn to dance at your feet in many different styles like Jazz, Contemporary, Ballet, Hiphop, etc. Subscribe us at $10 monthly to enjoy the unlimited video streaming. Watch Advance videos and sharpen your skills and create your strong base by watching our tutorials with the best Trainers who are avaliable to help you in shaping your skills.</p>
                     <div class="main-button">
                       <a href="subscription.html">View Advanced Videos</a>
                     </div>
                   </article>
-                  <!-- <article id='tabs-4'>
-                    <img src="assets/images/training-image-04.jpg" alt="Fourth Training">
-                    <h4>Fourth Training Class</h4>
-                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum commodo et.</p>
-                    <div class="main-button">
-                        <a href="#">View Schedule</a> -->
+                 
                     </div>
                   </article> 
                 </section>
@@ -238,17 +227,27 @@
 <!-- footer -->
 <div class="footer" style="margin-top: 90px;">
 	<div class="container">
-		<h2 style="float: left;"><a href="index.html"><span style="color:white;">You Trend</span></a></h2>
-		<form action="" method="post" style="float: left;">
-			<input type="email" name="email" placeholder="Your email..." required="">
-			<input type="submit" value=" ">
-		</form>
-		<div class="agileits_w3layouts_nav">
-			<div class="clearfix"> </div>
+		<div class="col-md-6" >
+			<h2 style="width:fit-content;"><a href="index.html"><span style="color:white;">You Trend</span></a></h2>
 		</div>
+		<div class="col-md-6">
+			<div class="col-md-12">
+				<h3 style="width: fit-content;">Follow Us</h3>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+				<a href="https://www.facebook.com/You-Trend-104234295435896"><img src="images/Facebook_icon_2013.svg.png" alt="Fb" style="float:left; width:70px;"></a>
+				</div>
+				<div class="col-md-6"></div>
+				<a href="https://www.youtube.com/watch?v=MGqecN7CrZQ"><img src="images/youtube.png" alt="Youtube" style="float:right; width:70px;"></a>
+				</div>
+			</div>
+	<div class="agileits_w3layouts_nav">
+		<div class="clearfix"> </div>
+	</div>
+	</div>
 		<p>© 2021 You Trend. All rights reserved | Design by KSU Publications</p>
 	</div>
-</div>
 <!-- //footer -->
   </body>
 </html>

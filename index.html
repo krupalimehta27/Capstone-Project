@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<nav class="link-effect-8" id="link-effect-8">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
                       	<li><a href="services.html">Services</a></li>
 						<li><a href="trainers.html">Trainers</a></li>
 						<li class="dropdown">
@@ -57,13 +56,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 						<li><a href="contactus.html">Contact Us</a></li>
+						<li><a href="../Capstone-Project/Login/login.php" onclick="alert('Log Out successfully');" class="button">Log Out</a></li>
+				
+          <li>Hi, <?php echo $_SESSION['username'];?>!</li>
 					</ul>
+					
 				</nav>
 			</div>
 		</nav>
 		<div class="w3_agile_banner_info">
 			<div class="container">
-				<h2><i>Dancing...</i> <span>with feet is one thing</span> but dancing with heart is another</h2>
+				<h2><strong>Dancing...</strong> <span>with feet is one thing</span> but dancing with heart is another</h2>
 			</div>
 		</div>
 	</div>
@@ -80,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div data-w-id="73b23224-2d8c-0b57-2683-19eb9907f188" class="hero_text_block" >
 					<h1 class="h1_v2">DANCE<br>CLASSES<br>FOR<br>EVERYONE<span></span></h1><br>
 					<div>The world’s best dance learning tools - at your fingertips.</div><br>
-					<a href="" class="w-button">SUBSCRIBE</a>
+					<a href="subscription.html" class="w-button">SUBSCRIBE</a>
 					<div class="div-block-94">
 					</div>
 				</div>
@@ -88,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>	
 		<div class="container">
 			<div width="20" style="padding:35px 25px 10px 25px;">
-				<b style="font-size: 50px; justify-content: right; width: 30px;"> Want to dance like no one is watching? </b>
+				<strong style="font-size: 50px; justify-content: right; width: 30px;"> Want to dance like no one is watching? </strong>
 					<article>
 						Raise your feet and shape your moves with You-Trend Dance Academy. 
 						Learn your favourite genres like Hiphop, Ballet, Jazz and Contemporary 
@@ -110,47 +113,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<ul id="flexiselDemo1">	
 			<li>
 				<div class="agileinfo_portfolio_grid">
-					<a href="images/7.jpg" class="lsb-preview" data-lsb-group="header">
+					<div class="lsb-preview" data-lsb-group="header"> 
 						<div class="agileits_portfolio_grid">
-							<img src="images/7.jpg" alt=" " class="img-responsive" />
+							<img src="images/7.jpg" alt="Image " class="img-responsive" />
 						</div>
-					</a>
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="agileinfo_portfolio_grid">
-					<a href="images/8.jpg" class="lsb-preview" data-lsb-group="header">
+					<div class="lsb-preview" data-lsb-group="header">
 						<div class="agileits_portfolio_grid">
-							<img src="images/8.jpg" alt=" " class="img-responsive" />
+							<img src="images/8.jpg" alt=" Image" class="img-responsive" />
 						</div>
-					</a>
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="agileinfo_portfolio_grid">
-					<a href="images/9.jpg" class="lsb-preview" data-lsb-group="header">
+					<div class="lsb-preview" data-lsb-group="header">
 						<div class="agileits_portfolio_grid">
-							<img src="images/9.jpg" alt=" " class="img-responsive" />
+							<img src="images/9.jpg" alt="Image" class="img-responsive" />
 						</div>
-					</a>
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="agileinfo_portfolio_grid">
-					<a href="images/10.jpg" class="lsb-preview" data-lsb-group="header">
+					<div class="lsb-preview" data-lsb-group="header">
 						<div class="agileits_portfolio_grid">
-							<img src="images/10.jpg" alt=" " class="img-responsive" />
+							<img src="images/10.jpg" alt="Image" class="img-responsive" />
 						</div>
-					</a>
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="agileinfo_portfolio_grid">
-					<a href="images/5.jpg" class="lsb-preview" data-lsb-group="header">
+					<div class="lsb-preview" data-lsb-group="header">
 						<div class="agileits_portfolio_grid">
-							<img src="images/5.jpg" alt=" " class="img-responsive" />
+							<img src="images/5.jpg" alt="Image" class="img-responsive" />
 						</div>
-					</a>
+					</div>
 				</div>
 			</li>
 		</ul>
@@ -198,17 +201,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- footer -->
 <div class="footer" style="margin-top: 90px;">
 	<div class="container">
-		<h2 style="float: left;"><a href="index.html"><span style="color:white;">You Trend</span></a></h2>
-		<form action="" method="post" style="float: left;">
-			<input type="email" name="email" placeholder="Your email..." required="">
-			<input type="submit" value=" ">
-		</form>
-		<div class="agileits_w3layouts_nav">
-			<div class="clearfix"> </div>
+		<div class="col-md-6" >
+			<h2 style="width:fit-content;"><a href="index.html"><span style="color:white;">You Trend</span></a></h2>
 		</div>
+		<div class="col-md-6">
+			<div class="col-md-12">
+				<h3 style="width: fit-content;">Follow Us</h3>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-6">
+				<a href="https://www.facebook.com/You-Trend-104234295435896"><img src="images/Facebook_icon_2013.svg.png" alt="Fb" style="float:left; width:70px;"></a>
+				</div>
+				<div class="col-md-6"></div>
+				<a href="https://www.youtube.com/watch?v=MGqecN7CrZQ"><img src="images/youtube.png" alt="Youtube" style="float:right; width:70px;"></a>
+				</div>
+			</div>
+	<div class="agileits_w3layouts_nav">
+		<div class="clearfix"> </div>
+	</div>
+	</div>
 		<p>© 2021 You Trend. All rights reserved | Design by KSU Publications</p>
 	</div>
-</div>
 <!-- //footer -->
 
 
